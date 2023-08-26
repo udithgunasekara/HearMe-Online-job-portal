@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+  <title>Log in</title>
+<link rel ="stylesheet" href ="CSS/login.css">
+  
+</head>
+
+<body>
+
+
+  <body>
+
+    <div class="left-side" id="left-side-container">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <img src="https://static1.shine.com/l/m/images/blog/job_search_portals.png" alt="This displays an image">
+    </div>
+
+    <div class="right-side">
+      <div class="form-container">
+        <h1><u>Hire Hub</u></h1>
+        <form onsubmit="checkPassword(); return false;" action ="login.php" method="POST">
+
+          <div class="headingsContainer">
+
+            <h3>Welcome back!</h3>
+            <br>
+            <p>Please login to continue!</p>
+            <br>
+          </div>
+
+          <!-- Main container for all inputs -->
+          <div class="mainContainer">
+
+            <label for="username">Please enter your username here.</label><br><br>
+            <input type="text" placeholder="Enter Username" id="username" name="username" required>
+
+            <br><br>
+
+
+            <label>Please enter your password here</label><br><br>
+            <input type="password" placeholder="Enter Password" name="passsword" id="passsword"
+              required>
+
+            <!-- sub container for the checkbox and forgot password link -->
+            <div class="subcontainer">
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+              <p class="forgotpsd"> <a href="#">Forgot Password?</a></p>
+            </div>
+
+            <input id="checkBox" type="checkbox" onclick="enableButton2()">Accept privacy required <br>
+            <br /><br />
+
+
+            <!-- Sign up link -->
+            <p class="register">Not a member? <a href="loginselectionmainnew.html">Register here!</a></p>
+
+          </div>
+
+          <center><input type="submit" id="submitBtn" value="Submit" </center></a>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function checkPassword() {
+        var password = document.getElementById("passsword").value;
+        // Validate password length
+        if (password.toString().length != 8) {
+          alert("Password must be  8 characters long.");
+          return false;
+        }
+  
+        var passwordStrength = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+        if (!password.match(passwordStrength)) {
+          alert(
+            "Password must contain at least one lowercase letter, one uppercase letter, and one digit."
+          );
+          return false;
+        }
+  
+  
+        return redirectToURL();
+      }
+  
+  
+      function redirectToURL() {
+  
+        window.location.href = "https://www.google.com";
+  
+      }
+  
+      function enableButton() {
+        var checkBox = document.getElementById("checkBox");
+        var submitBtn = document.getElementById("submitBtn");
+        submitBtn.disabled = !checkBox.checked;
+      }
+  
+      var termsLink = document.getElementById("termsLink");
+      var linkClicked = false;
+  
+      termsLink.addEventListener("click", function () {
+        linkClicked = true;
+      });
+  
+      function enableButton2() {
+        var checkBox = document.getElementById("checkBox");
+        var submitBtn = document.getElementById("submitBtn");
+  
+        submitBtn.disabled = !(checkBox.checked);
+      }
+  
+      var termsLink = document.getElementById("termsLink");
+      termsLink.addEventListener("click", function () {
+        termsLink.clicked = true;
+      });
+  
+  
+  
+    </script>
+  </body>
+
+  </html>

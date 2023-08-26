@@ -1,0 +1,234 @@
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .footer-content {
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .social-media a:hover {
+    color: #ff9800;
+  }
+  
+  .search-bar {
+    text-align: center;
+  }
+  
+  .search-bar form {
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .search-bar button {
+  
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #84aa1a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+  body{
+
+    font-family: sans-serif;
+    background-color: #e0d5c4;
+    }
+    
+    
+    /* nav bar */
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        background-color: #f1f1f1;
+      }
+      
+      .navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #f1f1f1;
+      }
+      
+      .navigation li {
+        float: left;
+      }
+      
+      .navigation li a {
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .navigation .search {
+        float: right;
+        margin-right: 10px;
+        padding-top: 10px;
+      }
+      
+      .navigation input[type="text"] {
+        padding: 6px;
+        border: none;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+      
+      .navigation button[type="submit"] {
+        padding: 6px 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      
+     
+      
+      
+    /* nav bar */
+    
+    
+    body{
+
+        font-family: sans-serif;
+        background-color: #e0d5c4;
+        }
+        
+        
+        /* nav bar */
+        
+        
+        body {
+            margin: 0;
+            padding: 0;
+          }
+          
+          header {
+            background-color: #f1f1f1;
+          }
+          
+          .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f1f1f1;
+          }
+          
+          .navigation li {
+            float: left;
+          }
+          
+          .navigation li a {
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          .navigation .search {
+            float: right;
+            margin-right: 10px;
+            padding-top: 10px;
+          }
+          
+          .navigation input[type="text"] {
+            padding: 6px;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+          }
+          
+          .navigation button[type="submit"] {
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 14px;
+            cursor: pointer;
+          }
+          
+         
+          
+          
+        /* nav bar */
+
+        
+        /*header*/
+        
+        
+        
+        .header {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            background-image: linear-gradient(to right, #f08503, #f65105);
+            padding: 0 20px;
+            padding-top: 10px;
+        }
+        
+        .header-left {
+           
+            flex: 1;
+        }
+        
+        .btn-custom {
+          background-color: #45a049; 
+          border-radius: 5px; 
+          padding: 10px 20px; 
+          font-size: 16px; 
+          border: none; 
+          cursor: pointer; 
+        }
+        
+        .btn-custom:hover {
+          background-color: #45a049; 
+        }

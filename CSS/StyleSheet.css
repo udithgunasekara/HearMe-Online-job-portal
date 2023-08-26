@@ -1,0 +1,457 @@
+﻿body {
+   
+}
+
+:root {
+    --main-color: #00FF00;
+    color: #093145;
+    background: #F8F7FF;
+}
+
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin:0;
+}
+
+.main-content{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.search-wrapper{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+.search-wrapper input{
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+.search-wrapper span{
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.user-wrapper img {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    margin-right:40px;
+}
+
+.user-wrapper h4, .user-wrapper small {
+    margin: 0;
+}
+
+
+
+.cards {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+.card-single:hover {
+    background-color: #FFD8BE;
+}
+
+.card-single {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 2px;
+    background-color: #FFEEDD;
+}
+
+.card-single span{
+    font-size: 1.5rem;
+}
+   
+.card-single h1 {
+        font-size: 2rem;
+        margin-left: 0.2rem;
+
+}
+
+/*Admin dashboard update*/
+.headname {
+    text-align: center;
+    background-color: #9381ff; 
+    color: #F8F7FF; 
+    padding: 20px; 
+}
+
+.headname h1 {
+    font-size: 36px; 
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.card-single img{
+    margin-left: 2px;
+
+}
+
+/*delete form style below*/
+
+.delete-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.delete-title {
+    margin-bottom: 20px;
+}
+
+.delete-title h1 {
+        font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+.form-group input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #777;
+        border-radius: 4px;
+        background-color: #555;
+        color: #fff;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+        padding: 10px 20px;
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+}
+
+.button-container button:hover {
+      background-color: #d32f2f;
+}
+
+
+/*delete form style upper*/
+
+.recent-grid{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: 70% auto;
+    margin-left: 30px;
+    margin-right: 30px;   
+}
+/* Styles for the table */
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-header {
+    background-color: #FFD8BE;
+    padding: 10px;
+    color: #093145;
+}
+
+    .table-header h1 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+.table-body table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+.table-body table th,
+.table-body table td {
+        padding: 10px;
+        text-align: left;
+    }
+
+.table-body table th {
+        background-color: #093145;
+        color: #333;
+    }
+
+.table-body table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+.table-body table tr:hover {
+        background-color: #FFEEDD;
+    }
+
+/*inbox mails*/
+
+.inboxmails {
+    margin-top:50px;
+    border: 1px solid #000000; 
+    padding: 20px; 
+}
+
+.inboxheading {
+    border-bottom: 1px solid #000000; 
+    margin-bottom: 20px; 
+}
+
+    .inboxheading h1 {
+        font-size: 24px; 
+    }
+
+.mailbox {
+    border: 1px solid #000000; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+}
+
+.mailheading {
+    border-bottom: 1px solid #000000; 
+    margin-bottom: 10px; 
+    display: flex;
+    align-items: center;
+}
+
+.subjectbox, .usernamebox {
+    flex: 1;
+}
+
+.subjectbox h3, .usernamebox h3 {
+     margin: 0;
+}
+
+.usermessage {
+    margin-top: 10px; 
+}
+
+.textarea {
+    width: 100%; 
+    height: 100px; 
+    background: #F8F7FF;
+    padding-top: 5px;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+
+
+/*end the inbox mails*/
+
+.header-area {
+    display: flex;
+    grid-template-columns: 50% auto;
+    margin:50px;
+}
+/*section 01*/
+
+.section1 {
+    
+    text-align: center;
+    width: 50%; 
+    padding: 20px; 
+}
+
+.section1 img {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 40%;
+        text-align:center;
+}
+
+.section1-heading h1 {
+    font-size: 30px; 
+    margin: 10px 0; 
+    text-decoration: underline;
+}
+
+.section1-description {
+    margin-bottom: 10px;
+     
+}
+
+.textarea {
+    width: 70%; 
+    height: 150px; 
+    border:solid;
+    padding: 20px;
+    max-width: 70%;
+    max-height: 100%;
+}
+
+.aaddvacanybtn {
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+    width: 70%;
+}
+
+.addvacanybtn a {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #306BAC; 
+    color: #ffffff; 
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+    .addvacanybtn a:hover {
+        background-color: #141B41; 
+    }
+
+/*END section 01*/
+
+/*comp section02*/
+
+.section02-wrapper {
+  width: 50%;
+  padding: 20px;
+  
+}
+
+.comp-title h1 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.comp-form {
+  margin-bottom: 10px;
+}
+
+.comp_input_field {
+  margin-bottom: 20px;
+  
+}
+
+.comp_input label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comp_input_field .ccform {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: red;
+}
+
+
+
+.comp_input_field .cform {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background: yellow;
+}
+
+.comp-box {
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.comp-button {
+    display: inline-block;
+    width: 80%;
+    padding: 10px 20px;
+    background-color: #306BAC;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.comp-button:hover {
+  background-color: #141B41;
+}
+/*END comp section02*/
+
+/* showing cv table*/
+
+.cvtableform {
+    width: 100%;
+}
+
+.cvtable-heading {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cvtable {
+    width: 100%;
+    margin-left:30px;
+}
+
+    .cvtable table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .cvtable thead {
+        background-color: #6F9CEB; 
+        color: #ffffff;
+    }
+
+    .cvtable th,
+    .cvtable td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .cvtable tbody tr:hover {
+        background-color: #C9DAF8; 
+    }
+
+/* END showing cv table*/

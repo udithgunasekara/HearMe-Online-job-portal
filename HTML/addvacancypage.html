@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Add Vacancie</title>
+    <link rel="stylesheet" href="CSS/addvacany.css" />
+   
+</head>
+<body>
+    <div class="main-form">
+        <div class="vacancy heading">
+            <h1>Add Your Job Vacancy</h1>
+        </div>
+        <div class="forms" >
+            <form action="submit.php" method="post">
+
+                <label for="jobtitle">Job Title:</label>
+                <input type="text" name="jobtitle" id="jobtitle" placeholder="Enter job title" required />
+
+                <label for="companyname">Company Name:</label>
+                <input type="text" name="companyname" id="companyname" placeholder="Enter your company name" required />
+
+                <label for="salary">Salary:</label>
+                 <input type="text" name="salary" id="salary" placeholder="Enter salary amount" required />
+
+                <label for="location">Location:</label>
+                <input type="text" name="location" id="location" placeholder="Enter job location" required />
+
+                <label for="deadline">Deadline:</label>
+                <input type="date" name="deadline" id="deadline" required />
+
+                <label for="contact">Contact:</label>
+                <input type="tel" pattern="[0-9]{10}" name="contact" id="contact" placeholder="Enter phone number" required />
+
+                <label for="companymail">Company Mail:</label>
+                <input type="email" name="companymail" id="companymail" placeholder="Enter company mail" required />
+
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" placeholder="Enter company description..."></textarea>
+
+                 <div class="submitbtn">
+                    <button type="submit" name="submit" id="submit" >Publish</button>
+                 </div>
+            </form>
+           
+            </div>
+        </div>
+   
+</body>
+</html>

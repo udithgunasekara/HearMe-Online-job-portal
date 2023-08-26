@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .top-bar,
+  .bottom-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .top-bar a,
+  .bottom-bar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    margin: 0 auto; /* Center horizontally */
+  }
+  .contact-form {
+    background-color: #f2f2f2;
+    border: 2px solid #ccc; /* Added border */
+    padding: 20px; /* Added padding */
+  }
+  .contact-form h2 {
+    margin-top: 0; /* Remove top margin */
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  textarea {
+    height: 100px;
+  }
+  .submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .location-info {
+    text-align: left;
+  }
+  .call-box {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Set the height */
+    border: 2px solid black; /* Added border */
+  }
+  .call-box img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .call-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .name-inputs {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center; /* Align items vertically */
+  }
+  .name-inputs input {
+    margin-right: 5px;
+    flex: 1; /* Expand to fill available space */
+  }
+  .map-image {
+    text-align: left;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .map-image img {
+    width: 600px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+  }
+  .form-label {
+    font-weight: bold;
+  }
+  .page-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  /* Added styles for the heading */
+  .contact-heading {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
